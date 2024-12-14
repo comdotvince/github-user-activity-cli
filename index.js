@@ -22,7 +22,7 @@ fetch(url).then(response => {
           message = `Pushed ${event.payload.size} commits to ${event.repo.name}`;
           break;
       case "CreateEvent":
-        message = `Created ${event.payload.ref_type} ${event.payload.ref} in ${event.repo.name}`;
+        message = `Created ${event.payload.ref} ${event.payload.ref} in ${event.repo.name}`;
         break;
       case "ForkEvent":
         message = `Forked ${event.payload.forkee.full_name} to ${event.repo.name}`;
