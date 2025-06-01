@@ -40,12 +40,7 @@ if (eventTypeArg && !VALID_EVENT_TYPES.includes(eventTypeArg)) {
 // Fetch GitHub events
 async function fetchGitHubEvents(username) {
   const url = `https://api.github.com/users/${username}/events`;
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "Node.js",
-      Accept: "application/vnd.github+json",
-    },
-  });
+  const response = await fetch(url);
 
   if (!response.ok) {
     throw new Error(`Error fetching data: ${response.statusText}`);
