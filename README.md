@@ -120,11 +120,7 @@ npm run dev
 
 ## 📝 License
 
-ISC License - see the LICENSE file for details.
-
-## 🐛 Issues
-
-If you encounter any issues, please report them at: [GitHub Issues](https://github.com/comdotvince/github-user-activity-cli/issues)
+ISC License
 
 ---
 
